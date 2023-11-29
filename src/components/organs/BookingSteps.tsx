@@ -50,7 +50,7 @@ const BookingSteps = () => {
                 </div>
                 {/* Card Container  */}
                 <div className='w-full flex flex-col lg:items-center items-start relative order-1 md:order-2'>
-                    <Card cardClass='flex items-start h-[60%] border-2 border-color3/5 shadow-md rounded-xl' imageSrc={ApronsPoster} cover='object-cover object-top' imageWrapperClass='h-full w-auto rounded-lg overflow-hidden'>
+                    <Card cardClass='flex items-start h-[60%] border-2 border-color3/5 shadow-md rounded-xl' imageSrc={ApronsPoster} cover='object-cover object-top' imageWrapperClass='h-full w-auto rounded-lg overflow-hidden' imageAlt='Apron Poster'>
                     </Card>
                 </div>
             </main>

@@ -7,7 +7,7 @@ import { useCallback } from "react"
 import Pouch from "../../assets/pencil-case.png"
 import Tote from "../../assets/tote-bag.png"
 import Apron from "../../assets/apron.png"
-import Icon4 from "../../assets/icon4.png"
+import StopWatch from "../../assets/stopwatch.png"
 import { Fade } from "react-awesome-reveal"
 
 
@@ -52,8 +52,8 @@ const Services = () => {
                             </Card>
                         ))
                     }
-                        <Card cardClass="border-sky-200 border-2 w-full bg-sky-50 flex flex-col items-center justify-center py-6 cursor-pointer transition duration-300 hover:shadow-xl px-5 rounded-xl cardPseudo after:bg-sky-600">
-                            <Text as="h4" className="text-xl font-semibold rounded text-color3">
+                        <Card cardClass="border-sky-200 border-2 w-full bg-sky-50 flex flex-col items-center justify-center py-6 cursor-pointer transition duration-300 hover:shadow-xl px-5 rounded-xl cardPseudo after:bg-sky-600" imageWrapperClass="h-20 w-auto" imageAlt="Stop watch" imageSrc={StopWatch}>
+                            <Text as="h4" className="text-xl mt-4 font-semibold rounded text-color3">
                                 COMING SOON
                             </Text>
                         </Card>
