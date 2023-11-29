@@ -1,16 +1,18 @@
 import { useCallback, useRef } from "react";
+import { Image } from "../atoms/Image"
 import { Text } from "../atoms/Text"
 import { TopDestinationTexts } from "../particles/DataLists"
 import Slider from "react-slick";
 import { Card } from "../molecules/Card";
-import City1 from "../../assets/gallery1.jpeg"
-import City2 from "../../assets/gallery2.jpeg"
-import City3 from "../../assets/gallery3.jpeg"
-import City4 from "../../assets/gallery4.jpeg"
-import City5 from "../../assets/gallery5.jpeg"
-import City6 from "../../assets/gallery6.jpeg"
+import FloraFauna from "../../assets/FloraFauna.png"
+import ThinkGreen from "../../assets/ThinkGreen.png"
+import HakunaMatata from "../../assets/HakunaMatata.png"
+import UrbanLife from "../../assets/UrbanLife.png"
+import GreenWhite from "../../assets/GreenWhite.png"
+import JutePurple from "../../assets/JutePurple.png"
 import { Button } from "../atoms/Button";
-import { AirplaneTilt, CaretLeft, CaretRight } from "@phosphor-icons/react";
+import PriceIcon from "../../assets/priceIcon.png"
+import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 
 
 const TopDestination = () => {
@@ -73,17 +75,17 @@ const TopDestination = () => {
     const renderCities = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return City1;
+                return FloraFauna;
             case 1:
-                return City2;
+                return ThinkGreen;
             case 2:
-                return City3;
+                return HakunaMatata;
             case 3:
-                return City4;
+                return UrbanLife;
             case 4:
-                return City5;
+                return GreenWhite;
             case 5:
-                return City6;
+                return JutePurple;
             default:
                 return "";
         }
@@ -100,10 +102,10 @@ const TopDestination = () => {
 
             {/* Controllers  */}
             <div className="mt-12 w-full flex justify-end gap-5 items-center md:px-6 px-3">
-                <Button onClick={previous} className="cursor-pointer outline-none border-none bg-color2/30 text-color3 hover:bg-color2 p-2 rounded-full" type="button">
+                <Button onClick={previous} className="cursor-pointer outline-none border-none bg-sky-500 text-white hover:bg-sky-600 p-2 rounded-full" type="button">
                     <CaretLeft size={18} color="currentColor" weight="fill" />
                 </Button>
-                <Button onClick={next} className="cursor-pointer outline-none border-none bg-color2/30 text-color3 hover:bg-color2 p-2 rounded-full" type="button">
+                <Button onClick={next} className="cursor-pointer outline-none border-none bg-sky-500 text-white hover:bg-sky-600 p-2 rounded-full" type="button">
                     <CaretRight size={18} color="currentColor" weight="fill" />
                 </Button>
             </div>
@@ -114,7 +116,7 @@ const TopDestination = () => {
                     {
                         TopDestinationTexts.cards.map((card, index) => (
                             <div key={index} className="md:px-6 px-3">
-                                <Card cardClass="overflow-hidden shadow-md rounded-lg cursor-pointer group" imageAlt={card.country} imageSrc={renderCities(index)} imageWrapperClass="w-full h-[250px] overflow-hidden" cover="group-hover:scale-125 transition duration-500 ease" textWrapperClass="flex flex-col gap-4 w-full px-5 py-5">
+                                <Card cardClass="overflow-hidden shadow-md rounded-lg cursor-pointer group" imageAlt={card.country} imageSrc={renderCities(index)} imageWrapperClass="w-auto h-[400px] overflow-hidden" cover="group-hover:scale-125 transition duration-500 ease" textWrapperClass="flex flex-col gap-4 w-full px-5 py-5">
                                     <div className="flex justify-between items-center">
                                         <Text as="h4" className="text-base font-medium text-color3">
                                             {card.country}
@@ -124,7 +126,7 @@ const TopDestination = () => {
                                         </Text>
                                     </div>
                                     <div className="w-full flex gap-4 items-center text-color3">
-                                        <AirplaneTilt size={20} color="currentColor" weight="fill" />
+                                        <Image image={PriceIcon} alt="Hero Image" className="h-4" />
                                         <Text as="p" className=" text-color3 font-light text-base">
                                             {card.duration}
                                         </Text>

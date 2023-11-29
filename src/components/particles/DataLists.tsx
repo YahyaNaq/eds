@@ -1,18 +1,22 @@
 export const NavLinks = [
     {
-        name: "Destination",
+        name: "Bags",
         url: "/"
     },
     {
-        name: "Hotels",
+        name: "Aprons",
         url: "/"
     },
     {
-        name: "Flights",
+        name: "Pouches",
         url: "/"
     },
     {
-        name: "Bookings",
+        name: "About us",
+        url: "/"
+    },
+    {
+        name: "Our Store",
         url: "/"
     }
 
@@ -32,99 +36,84 @@ export const NavButtons = [
 
 
 export const HeroTexts = {
-    firstText: "BEST DESITNATIONS AROUND THE WORLD",
-    secondText: "Travel, enjoy and live a new and full life.",
-    thirdText: "Built Wicket longer admire do barton vantity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.",
-    firstButton: "Find out more",
+    firstText: "BAGS FOR YOUR EVERYTHING - BY EDs",
+    secondText: "Totes, Pouches, Aprons, you name it!",
+    thirdText: "EDs offers personalized totes, and aprons for your business and personal use.",
+    firstButton: "Buy Now",
     secondButton: 'Play Demo'
 }
 
 
 export const ServiceTexts = {
-    firstText: "CATEGORY",
-    secondText: "We Offer Best Services",
+    firstText: "OUR PRODUCTS",
+    secondText: "What do we offer?",
     cards: [
         {
-            firstText: "Calculated Weather",
-            secondText: "Built Wicket longer admire do barton vantity itself do in it."
+            firstText: "Pouches",
+            secondText: "Specialized and multipurpose pouches for your accessories."
         },
         {
-            firstText: "Best Flight",
-            secondText: "engrossed listening. Park gate sell they west hard for the."
+            firstText: "Bags",
+            secondText: "Easy carry tote bags that save you a lot of space."
         },
         {
-            firstText: "Local Events",
-            secondText: "barton vantity itself do in it.Preferred to men it engrossed listening."
+            firstText: "Aprons",
+            secondText: "Cool aprons to enhance your baking and cooking experience."
         },
-        {
-            firstText: "Customizition",
-            secondText: "We deliver outsourced aviation services for military customers."
-        }
     ]
 }
 
 export const TopDestinationTexts = {
     firstText: "Top selling",
-    secondText: "Top Destinations",
+    secondText: "Top Tote Bags",
     cards: [
         {
-            country: "Rome, Italy",
-            price: "5.42k",
-            duration: "10 days trip"
+            country: "Flora n Fauna - Multipurpose",
+            price: "Rs 3.8k",
+            duration: "10% off"
         },
         {
-            country: "London, UK",
-            price: "4.2k",
-            duration: "12 days trip"
+            country: "Think Green - Multipurpose",
+            price: "Rs 2.6k",
+            duration: "20% off"
         },
         {
-            country: "Paris, France",
-            price: "15k",
-            duration: "26 days trip"
+            country: "Hakuna Matata - College Tote",
+            price: "Rs 3.2k",
+            duration: "30% off"
         },
         {
-            country: "New York, USA",
-            price: "4.5k",
-            duration: "8 days trip"
+            country: "Urban Life - College Tote",
+            price: "Rs 2.1k",
+            duration: "50% off"
         },
         {
-            country: "Warsaw, Poland",
-            price: "3.9k",
-            duration: "14 days trip"
+            country: "Green Pollin - Grocery Tote",
+            price: "Rs 3.6k",
+            duration: "10% off"
         },
         {
-            country: "Dubai, UAE",
-            price: "9.2k",
-            duration: "17 days trip"
+            country: "Rich Mosaic - Multipurpose",
+            price: "Rs 4.3k",
+            duration: "12% off"
         },
     ]
 }
 
 export const BookingStepsTexts = {
-    firstText: "Easy and Fast",
-    secondText: "Book your next trip in 3 easy steps",
+    firstText: "Why Us?",
+    secondText: "Reasons why you should buy from EDs",
     listOfSteps: [
         {
-            text: "Choose Destination lorem ipsum dolor sit amet, consectetur adipiscing elit.Urna, tortor tempus."
+            text: "Personalization - EDs provides a variety of options for personalizing your favourite item. Personalize the products you like with your name or business"
         },
         {
-            text: "Make Payment lorem ipsum dolor sit amet, consectetur adipiscing elit.Uma, totor tempus."
+            text: "Robust quality - EDs has been consistent with its strong, reliable material and stitching which makes its products stand out."
         },
         {
-            text: "Reach Airport on Selected Date lorem ipsum dolor sit amet.consectetur adipiscing elit.Uma totor tempus."
+            text: "Customization - EDs allows customers to requests modifications of your choice to your preferred item."
         }
-    ],
-    cardOne:
-    {
-        name: "Trip To Greece",
-        date: "14-29 June  |  by Robbin Jobs",
-        people: "24 people going"
-    },
-    cardTwo: {
-        status: "Ongoing",
-        destination: "Trip to Rome",
-        completion: "40% Completed"
-    }
+    ]
 
 }
 
@@ -133,36 +122,36 @@ export const TestimonialTexts = {
     secondText: "What people say about Us.",
     feedBacks: [
         {
-            text: "You did a fabulous job. There were no hitches. Thank you again for all your work planning this trip.",
-            person: "Mike taylor",
-            location: "Lahore, Pakistan"
+            text: "It has been a couple of years using EDs' multipurpose tote and it still feels new.",
+            person: "Zara Ahmed",
+            location: "Karachi, Pakistan"
         },
         {
-            text: "Jadoo was great with the entire process from planning to updates during the trip. We had 11 people and everything was perfectly executed. We appreciate all of her hard work. It was truly the trip of a lifetime. Thank you!",
-            person: "Gina",
-            location: "Owerri, Nigeria"
+            text: "Thank you!",
+            person: "Saira Ali",
+            location: "Karachi, Pakistan"
         },
         {
             text: "Booking through you was very easy and made our lives so much easier. I have nothing bad to say! Thank you for giving us tips and guidance before we left on what to bring and such, that was very helpful!",
-            person: "Emma",
-            location: "Vancouver, Canada"
+            person: "Asma Imran",
+            location: "Karachi, Pakistan"
         },
         {
             text: "Thank you for your recommendation and putting the trip together. The resort was absolutely beautiful. The infinity pools, the palm trees in the main pool, the infinity pool in out preferred area overlooking the gulf and the golf course were exceptional....",
-            person: "Loveth",
-            location: "Lagos, Nigeria"
+            person: "Fatima Khan",
+            location: "Karachi, Pakistan"
         },
     ],
 }
 
 export const NewsletterTexts = {
-    firstText: "Subscribe to get information, latest news and other interesting offers about Jadoo.",
+    firstText: "Subscribe to get information, latest products and other interesting offers by EDs",
     placeholderText: "Your email",
     buttonText: "Subscribe"
 }
 
 export const FooterTexts = {
-    underLogoText: "Book your trip in minutes, get full control for much longer.",
+    underLogoText: "Buy a product that lasts with quality. Order now!",
     quickLinks: {
         caption: "Quick Links",
         links: [

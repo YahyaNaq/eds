@@ -5,10 +5,8 @@ import Slider from "react-slick";
 import { Button } from "../atoms/Button";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
 import { Card } from "../molecules/Card";
-import ProfileImg1 from "../../assets/profile1.jpeg"
-import ProfileImg2 from "../../assets/profile2.jpeg"
-import ProfileImg3 from "../../assets/profile3.jpeg"
-import ProfileImg4 from "../../assets/profile4.jpeg"
+import NoDpFemale from "../../assets/no-dp-female.svg"
+
 
 const Testimonials = () => {
     const sliderRef = useRef<Slider | null>();
@@ -40,13 +38,13 @@ const Testimonials = () => {
     const renderProfileImg = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return ProfileImg2;
+                return NoDpFemale;
             case 1:
-                return ProfileImg1;
+                return NoDpFemale;
             case 2:
-                return ProfileImg3;
+                return NoDpFemale;
             case 3:
-                return ProfileImg4;
+                return NoDpFemale;
             default:
                 return "";
         }
@@ -71,7 +69,7 @@ const Testimonials = () => {
                             {
                                 TestimonialTexts.feedBacks.map((feedBack, index) => (
                                     <div className="w-full">
-                                        <Card key={index} cardClass="bg-white shadow border-[1px] border-color3/10 relative rounded-xl p-4 lg:h-[200px] h-[260px] lg:mb-4 w-full flex gap-4 justify-start" imageAlt={feedBack.person} imageSrc={renderProfileImg(index)} imageWrapperClass="w-20 h-20 rounded-full absolute lg:bottom-4 bottom-3 right-4 overflow-hidden" cover="object-cover object-top" textWrapperClass="flex flex-col justify-center gap-6">
+                                        <Card key={index} cardClass="bg-white shadow border-[1px] border-color3/10 relative rounded-xl p-4 lg:h-[200px] h-[260px] lg:mb-4 w-full flex gap-4 justify-start" imageAlt={feedBack.person} imageSrc={renderProfileImg(index)} imageWrapperClass="w-20 h-20 rounded-full absolute lg:bottom-4 bottom-3 right-4 overflow-hidden saturation-200" cover="object-cover object-top" textWrapperClass="flex flex-col justify-center gap-6">
                                             <Text as="q" className="text-[0.84rem] font-light text-color3">
                                                 {feedBack.text}
                                             </Text>
@@ -91,10 +89,10 @@ const Testimonials = () => {
                     </div>
                     {/* Controllers  */}
                     <div className="flex flex-col gap-4 pb-5">
-                        <Button onClick={previous} id="prev" className="cursor-pointer outline-none border-none bg-color2/30 text-color3 hover:bg-color2 p-2 rounded-full" type="button">
+                        <Button onClick={previous} id="prev" className="cursor-pointer outline-none border-none bg-sky-600 text-white hover:bg-sky-500 p-2 rounded-full" type="button">
                             <CaretUp size={18} color="currentColor" weight="fill" />
                         </Button>
-                        <Button onClick={next} id="next" className="cursor-pointer outline-none border-none bg-color2/30 text-color3 hover:bg-color2 p-2 rounded-full" type="button">
+                        <Button onClick={next} id="next" className="cursor-pointer outline-none border-none bg-sky-600 text-white hover:bg-sky-500 p-2 rounded-full" type="button">
                             <CaretDown size={18} color="currentColor" weight="fill" />
                         </Button>
                     </div>

@@ -4,9 +4,9 @@ import { ServiceTexts } from "../particles/DataLists"
 import GroupOfPlus from "../../assets/plusGroup.png"
 import { Card } from "../molecules/Card"
 import { useCallback } from "react"
-import Icon1 from "../../assets/icon1.png"
-import Icon2 from "../../assets/icon2.png"
-import Icon3 from "../../assets/icon3.png"
+import Pouch from "../../assets/pencil-case.png"
+import Tote from "../../assets/tote-bag.png"
+import Apron from "../../assets/apron.png"
 import Icon4 from "../../assets/icon4.png"
 import { Fade } from "react-awesome-reveal"
 
@@ -18,13 +18,11 @@ const Services = () => {
     const renderServiceIcon = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return Icon1;
+                return Pouch;
             case 1:
-                return Icon2;
+                return Tote;
             case 2:
-                return Icon3;
-            case 3:
-                return Icon4;
+                return Apron;
             default:
                 return "";
         }
@@ -44,7 +42,7 @@ const Services = () => {
                     {
                         ServiceTexts.cards.map((card, index) => (
 
-                            <Card cardClass="w-full bg-white flex flex-col items-center justify-center py-6 cursor-pointer transition duration-300 hover:shadow-xl px-5 rounded-xl cardPseudo after:bg-color1" imageWrapperClass="w-28 h-28 relative z-10 before:content-[''] before:absolute before:top-3 before:right-3 before:w-16 before:h-16 before:bg-color2/30 before:-z-10 before:rounded-tl-3xl before:rounded-br-3xl" cover="object-cover" imageAlt={card.firstText} imageSrc={renderServiceIcon(index)} textWrapperClass="w-full flex flex-col items-center gap-2" key={index} >
+                            <Card cardClass="w-full bg-white flex flex-col items-center justify-center py-6 cursor-pointer transition duration-300 hover:shadow-xl px-5 rounded-xl cardPseudo after:bg-sky-600" imageWrapperClass="w-28 h-28 relative z-10 mb-4" cover="object-cover" imageAlt={card.firstText} imageSrc={renderServiceIcon(index)} textWrapperClass="w-full flex flex-col items-center gap-2" key={index} >
                                 <Text as="h4" className="text-base rounded font-medium text-color3">
                                     {card.firstText}
                                 </Text>
@@ -54,6 +52,11 @@ const Services = () => {
                             </Card>
                         ))
                     }
+                        <Card cardClass="border-sky-200 border-2 w-full bg-sky-50 flex flex-col items-center justify-center py-6 cursor-pointer transition duration-300 hover:shadow-xl px-5 rounded-xl cardPseudo after:bg-sky-600">
+                            <Text as="h4" className="text-xl font-semibold rounded text-color3">
+                                COMING SOON
+                            </Text>
+                        </Card>
                 </div>
             </main>
 

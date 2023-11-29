@@ -1,5 +1,5 @@
 import { Image } from "../atoms/Image"
-import logo from "../../assets/logo2.png"
+import Logo from "../../assets/EDsblue.png"
 import { Text } from "../atoms/Text"
 import { FooterTexts } from "../particles/DataLists"
 import { List } from "../atoms/List"
@@ -13,7 +13,7 @@ const Footer = () => {
         <footer className="w-full flex flex-col bg-white">
             <section className="w-full h-auto grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6 py-16 gap-7 md:gap-4 lg:gap-0">
                 <div className="flex flex-col items-start gap-4">
-                    <Image className="w-28" image={logo} alt="Logo" as="a" href="/" />
+                    <Image className="w-28" image={Logo} alt="Logo" as="a" href="/" />
                     <Text className="text-sm text-color4" as="p">
                         {FooterTexts.underLogoText}
                     </Text>
@@ -67,17 +67,17 @@ const Footer = () => {
                 <div className="flex flex-col lg:items-center w-full md:mt-8 gap-4">
                     <ul className="w-full flex items-center lg:justify-center gap-4">
                         <List>
-                            <Link to={`/`} className="text-color3 border-[1px] border-color3/50 p-2.5 flex rounded-full transition-all duration-300 ease-in hover:bg-gradient-to-tr from-color1 to-color2 hover:text-white">
+                            <Link to={`/`} className="text-color3 border-[1px] border-color3/50 p-2.5 flex rounded-full transition-all duration-300 ease-in hover:bg-sky-600 hover:text-white">
                                 <FacebookLogo size={15} color="currentColor" weight="fill" />
                             </Link>
                         </List>
                         <List>
-                            <Link to={`/`} className="text-color3 border-[1px] border-color3/50 p-2.5 flex rounded-full transition-all duration-300 ease-in hover:bg-gradient-to-tr from-color1 to-color2 hover:text-white">
+                            <Link to={`/`} className="text-color3 border-[1px] border-color3/50 p-2.5 flex rounded-full transition-all duration-300 ease-in hover:bg-sky-600 hover:text-white">
                                 <InstagramLogo size={15} color="currentColor" weight="fill" />
                             </Link>
                         </List>
                         <List>
-                            <Link to={`/`} className="text-color3 border-[1px] border-color3/50 p-2.5 flex rounded-full transition-all duration-300 ease-in hover:bg-gradient-to-tr from-color1 to-color2 hover:text-white">
+                            <Link to={`/`} className="text-color3 border-[1px] border-color3/50 p-2.5 flex rounded-full transition-all duration-300 ease-in hover:bg-sky-600 hover:text-white">
                                 <TwitterLogo size={15} color="currentColor" weight="fill" />
                             </Link>
                         </List>
@@ -90,7 +90,7 @@ const Footer = () => {
                 </div>
             </section>
             <Text className="text-center bg-color4 text-white text-xs py-6 font-light">
-                Copyright 2023. Jadoo.com. All rights reserved.
+                Copyright 2023. EDs.org All rights reserved.
             </Text>
         </footer>
     )

@@ -11,7 +11,7 @@ export const SubscribeForm = () => {
                     <Envelope size={18} color="currentColor" weight="fill" />
                 </div>
             </Input>
-            <Button type='submit' className='border-none outline-none bg-color1 py-2 px-6 text-white font-light text-base rounded-lg'>
+            <Button type='submit' className='border-none outline-none bg-sky-600 py-2 px-6 text-white font-light text-base rounded-lg'>
                 {NewsletterTexts.buttonText}
             </Button>
         </form>
