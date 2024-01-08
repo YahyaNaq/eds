@@ -127,18 +127,13 @@ export const TestimonialTexts = {
             location: "Karachi, Pakistan"
         },
         {
-            text: "Thank you!",
-            person: "Saira Ali",
+            text: "The florak pouch is lovely and decent, Thanks!",
+            person: "Tahira Ali",
             location: "Karachi, Pakistan"
         },
         {
-            text: "Booking through you was very easy and made our lives so much easier. I have nothing bad to say! Thank you for giving us tips and guidance before we left on what to bring and such, that was very helpful!",
-            person: "Asma Imran",
-            location: "Karachi, Pakistan"
-        },
-        {
-            text: "Thank you for your recommendation and putting the trip together. The resort was absolutely beautiful. The infinity pools, the palm trees in the main pool, the infinity pool in out preferred area overlooking the gulf and the golf course were exceptional....",
-            person: "Fatima Khan",
+            text: "My friends have complimented the pouch I bought recently from you guys, Thanks!",
+            person: "Noor us Saba",
             location: "Karachi, Pakistan"
         },
     ],
